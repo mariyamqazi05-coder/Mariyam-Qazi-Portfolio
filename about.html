@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mariyam Qazi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .skill-tag {
+            background: rgba(20, 184, 166, 0.1);
+            color: var(--accent-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid rgba(20, 184, 166, 0.2);
+        }
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Mariyam<span>.</span></a>
+            <button class="hamburger">&#9776;</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="education.html">Education</a>
+                <a href="certification.html">Certification</a>
+                <a href="contact.html">Contact</a>
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1.5rem; margin-top: -0.5rem;">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="container" style="padding-top: 120px;">
+            <h2>About <span class="highlight" style="color: var(--accent-primary);">Me</span></h2>
+            
+            <div class="about-content">
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary); font-family: var(--font-heading);">My Background</h3>
+                    <p>Hello! I am Mariyam Qazi, a dedicated professional with a strong foundation in modern technologies and problem-solving. I am passionate about building exceptional digital experiences and constantly striving to learn and grow in the ever-evolving tech landscape.</p>
+                    <p>With an eye for design and a focus on performance, I aim to deliver solutions that are not only functional but also aesthetically pleasing and user-friendly. My approach combines creativity with technical expertise.</p>
+                </div>
+
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary); font-family: var(--font-heading);">Key Skills</h3>
+                    <p>Some of the technologies and concepts I have been working with recently:</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">HTML5 / CSS3</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Creative Thinking</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download Full Resume
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mariyam Qazi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

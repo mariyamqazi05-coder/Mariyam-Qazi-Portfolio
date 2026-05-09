@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mariyam Qazi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects-grid {
+            margin-top: 3rem;
+        }
+        .project-image-wrapper {
+            overflow: hidden;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+        }
+        .project-image-wrapper img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .glass-card:hover .project-image-wrapper img {
+            transform: scale(1.05);
+        }
+        .project-tech {
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Mariyam<span>.</span></a>
+            <button class="hamburger">&#9776;</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="education.html">Education</a>
+                <a href="certification.html">Certification</a>
+                <a href="contact.html">Contact</a>
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1.5rem; margin-top: -0.5rem;">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="container" style="padding-top: 120px;">
+            <h2 style="text-align: center;">Featured <span class="highlight" style="color: var(--accent-primary);">Projects</span></h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">Here are some of the professional projects I have worked on, demonstrating my skills in web development and design.</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card">
+                    <div class="project-image-wrapper">
+                        <img src="assets/project1.png" alt="Sleek Dashboard UI">
+                    </div>
+                    <div class="project-tech">React &bull; TailwindCSS &bull; Chart.js</div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>A modern, sleek dashboard web application interface designed for high-performance data visualization. Features a fully responsive dark mode layout with vibrant teal accents.</p>
+                    <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; margin-top: 1rem; width: 100%;">View Case Study</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card">
+                    <div class="project-image-wrapper">
+                        <img src="assets/project2.png" alt="E-commerce Website">
+                    </div>
+                    <div class="project-tech">HTML &bull; CSS &bull; JavaScript</div>
+                    <h3>Luxury E-commerce Platform</h3>
+                    <p>An elegant e-commerce landing page featuring glassmorphism elements and vibrant gold accents. Designed to provide a premium user experience with smooth micro-animations.</p>
+                    <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; margin-top: 1rem; width: 100%;">View Case Study</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mariyam Qazi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

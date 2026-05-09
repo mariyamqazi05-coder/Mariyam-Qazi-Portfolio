@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mariyam Qazi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            margin-top: 2rem;
+            text-align: left;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .form-group label {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .form-group input, .form-group textarea {
+            padding: 1rem;
+            border-radius: 12px;
+            background: rgba(11, 15, 25, 0.5);
+            border: 1px solid var(--surface-border);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            transition: var(--transition);
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Mariyam<span>.</span></a>
+            <button class="hamburger">&#9776;</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="education.html">Education</a>
+                <a href="certification.html">Certification</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1.5rem; margin-top: -0.5rem;">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="container" style="padding-top: 120px;">
+            <div class="contact-wrapper">
+                <h2>Get in <span class="highlight" style="color: var(--accent-primary);">Touch</span></h2>
+                <p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+                
+                <div class="glass-card" style="width: 100%; max-width: 600px; margin-top: 2rem;">
+                    <!-- Simulating a contact form -->
+                    <form class="contact-form" action="mailto:mariyam@example.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-links" style="margin-top: 3rem;">
+                    <p>Or email me directly at: <a href="mailto:mariyam@example.com" style="color: var(--accent-primary); font-weight: 600;">mariyam@example.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mariyam Qazi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
